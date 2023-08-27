@@ -2,6 +2,6 @@
 Simple Task Mangement CRUD using local room database and depedency injection using dagger hilt (jetpack compose material 3)
 
 <p align="center">
-  <img src="https://imgur.com/QI1xJrQ" alt="Image Alt Text" width="300" >
-  <img src="https://imgur.com/lM5fs0bg" alt="Image Alt Text" width="300" >
+  <img src="https://imgur.com/QI1xJrQ.png" alt="Image Alt Text" width="300" >
+  <img src="https://imgur.com/lM5fs0bg.png" alt="Image Alt Text" width="300" >
 </p>
