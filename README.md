@@ -3,5 +3,5 @@ Simple Task Mangement CRUD using local room database and depedency injection usi
 
 <p align="center">
   <img src="https://imgur.com/QI1xJrQ.png" alt="Image Alt Text" width="300" >
-  <img src="https://imgur.com/lM5fs0bg.png" alt="Image Alt Text" width="300" >
+  <img src="https://i.imgur.com/lM5fs0b.png" alt="Image Alt Text" width="300" >
 </p>
