@@ -1,9 +1,10 @@
 package com.example.taskmanagement.data
 
-import androidx.lifecycle.MutableLiveData
+
+import javax.inject.Inject
 
 
-class TaskRepository(private val taskDao: TaskDao) {
+class TaskRepository @Inject constructor (private val taskDao: TaskDao) {
     suspend fun getAllTask(): List<Task> {
         return taskDao.getAllTask()
     }
@@ -14,20 +15,5 @@ class TaskRepository(private val taskDao: TaskDao) {
 
     suspend fun deleteTask(task: Task) {
         return taskDao.deleteTask(task)
-    }
-
-    suspend fun updateVisibility(id: Int, visibility: Boolean) {
-        return taskDao.update(id, visibility)
-    }
-
-    companion object{
-        private val INSTANCE : TaskRepository? = null
-
-        fun getInstance(taskDao: TaskDao) : TaskRepository{
-            return INSTANCE ?: synchronized(this){
-                val instance = TaskRepository(taskDao)
-                instance
-            }
-        }
     }
 }
