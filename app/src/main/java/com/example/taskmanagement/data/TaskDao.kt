@@ -1,6 +1,5 @@
 package com.example.taskmanagement.data
 
-import android.opengl.Visibility
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
@@ -18,7 +17,4 @@ interface TaskDao {
 
     @Delete
     suspend fun deleteTask(task : Task)
-
-    @Query("UPDATE task SET visibility = :visibility WHERE taskId = :id")
-    suspend fun update(id: Int,visibility: Boolean)
 }

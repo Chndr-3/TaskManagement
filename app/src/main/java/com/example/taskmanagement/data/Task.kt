@@ -9,7 +9,6 @@ data class Task(
     val taskId: Int? = 0,
     val name: String,
     val priority: Priority,
-    var visibility: Boolean = false,
     val date: String
 
 )

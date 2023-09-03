@@ -234,7 +234,6 @@ fun CustomBottomSheets(
                             name = taskName,
                             date = taskDate,
                             priority = selectedOptionText,
-                            visibility = true
                         )
                     )
 
